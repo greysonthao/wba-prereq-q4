@@ -4,7 +4,6 @@ import wallet from "./dev-wallet.json";
 const keypair = Keypair.fromSecretKey(new Uint8Array(wallet));
 
 console.log("keypair: ", keypair.publicKey.toBase58());
-//public address: 8hktqmo3ycHfwHNrRe4yf8RBmwZsvFtp6vusBiPzLTAF
 
 const connection = new Connection("https://api.devnet.solana.com");
 
