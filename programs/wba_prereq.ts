@@ -57,7 +57,7 @@ export type WbaPrereq = {
   ];
   accounts: [
     {
-      name: "PrereqAccount";
+      name: "prereqAccount";
       type: {
         kind: "struct";
         fields: [
@@ -141,7 +141,7 @@ export const IDL: WbaPrereq = {
   ],
   accounts: [
     {
-      name: "PrereqAccount",
+      name: "prereqAccount",
       type: {
         kind: "struct",
         fields: [

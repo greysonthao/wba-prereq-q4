@@ -25,10 +25,10 @@ const [enrollment_key, _bump] = PublicKey.findProgramAddressSync(
 
 (async () => {
   try {
-    const accounts = await program.account.PrereqAccount.fetch(
-      enrollment_key.toBase58()
-    );
-    console.log("accounts: ", accounts);
+    const accounts = await program.account.prereqAccount.fetch(enrollment_key);
+
+    console.log("github username: ", accounts.github.toString());
+    console.log("wallet address: ", accounts.key.toBase58());
   } catch (error) {
     console.error("Error fetching account data:", error);
   }
